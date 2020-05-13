@@ -1,0 +1,32 @@
+.main-panel {
+  background-color: #F1F3FA;
+}
+
+/* Navbar */
+.navbar.navbar-transparent {
+  background-color: #fff !important;
+  box-shadow: 0 2px 11px #c7c5c5;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 18px;
+  color: #6c757d;
+}
+.navbar.navbar-transparent .nav-item .nav-link:not(.btn):hover,
+.navbar.navbar-transparent .nav-item .nav-link:not(.btn):focus,
+.navbar.navbar-transparent .nav-item .nav-link:not(.btn):hover,
+.navbar.navbar-transparent .nav-item .nav-link:not(.btn):focus:hover {
+  color: #061c43;
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #061c43;
+}
+.nav-item .user-img {
+  height: 30px;
+}
+.inline {
+  display: inline;
+}
+
+

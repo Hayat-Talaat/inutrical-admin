@@ -5,9 +5,86 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#F1F3FA;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*, *:focus, a, a:focus {
+    outline: none;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* colors */
+.white {
+  color: #ffffff;
+}
+.light-white {
+  color: #FAFBFE;
+}
+.dark-white {
+  color: #F1F3FA;
+}
+
+.light-blue {
+  color: #1F78B4;
+}
+.dark-blue {
+  color: #061C43;
+}
+
+.light-gray {
+  color: #8391A2;
+}
+.dark-gray {
+  color: #6C757D;
+}
+
+.bink {
+  color: #FA5C7C;
+}
+.green {
+  color: #A9D41F;
+}
+
+/* background */
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-light-white {
+  background-color: #FAFBFE;
+}
+.bg-dark-white {
+  background-color: #F1F3FA;
+}
+
+.bg-light-blue {
+  background-color: #1F78B4;
+}
+.bg-dark-blue {
+  background-color: #061C43 !important;
+}
+
+.light-gray {
+  color: #8391A2;
+}
+.dark-gray {
+  color: #6C757D;
+}
+
+.bink {
+  color: #FA5C7C;
+}
+.green {
+  color: #A9D41F;
+}
+
+.input-group.no-border .form-control{
+  background-color: rgb(241, 243, 251);
 }

@@ -1,0 +1,42 @@
+/* Sidebar */
+.sidebar,
+.off-canvas-sidebar {
+  background-color: #061c43 !important;
+}
+.sidebar:before,
+.sidebar:after,
+.off-canvas-sidebar:before,
+.off-canvas-sidebar:after {
+  background-color: #061c43 !important;
+}
+
+/* Logo */
+.logo .logo-image-big img {
+  height: 50px;
+}
+
+
+/* SidebarWrapper */
+.sidebar-wrapper .nav .itemWrapper {
+  display: flex;
+  align-items: center;
+}
+.sidebar-wrapper .nav .head-items {
+  font-weight: bold;
+  font-size: 15px;
+  color: #8391A2;
+  text-transform: uppercase;
+  padding: 10px 8px;
+  margin: 20px 15px 0;
+}
+.sidebar-wrapper .nav .item-icon {
+  padding-right: 15px;
+}
+.sidebar-wrapper .nav .item-text {
+  font-size: 15px;
+  color: #8391A2;
+  text-transform: capitalize;
+}
+.sidebar-wrapper .nav .active .item-text {
+  color: #FAFBFE;
+}

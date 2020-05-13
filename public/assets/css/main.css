@@ -1,0 +1,38 @@
+/* colors */
+.white {
+  color: #ffffff;
+}
+.light-white {
+  color: #FAFBFE;
+}
+.dark-white {
+  color: #F1F3FA;
+}
+
+.light-blue {
+  color: #1F78B4;
+}
+.dark-blue {
+  color: #061C43;
+}
+
+.light-gray {
+  color: #8391A2;
+}
+.dark-gray {
+  color: #6C757D;
+}
+
+.bink {
+  color: #FA5C7C;
+}
+.green {
+  color: #A9D41F;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
