@@ -18,7 +18,6 @@ const SidebarWrapper = () => {
             </div>
           </Link>
         </li>
-
         <li>
           <Link to="/staff-list">
             <div className="itemWrapper">
@@ -31,7 +30,6 @@ const SidebarWrapper = () => {
             </div>
           </Link>
         </li>
-
         <li>
           <Link to="/hospitals-list">
             <div className="itemWrapper">
@@ -115,6 +113,59 @@ const SidebarWrapper = () => {
                 src="assets/img/sidebar-icons/Settings.png"
               />
               <span className="item-text">Settings</span>
+            </div>
+          </Link>
+        </li>
+
+        <p className="head-items">Navigation</p>
+        <li>
+          <Link to="/admin">
+            <div className="itemWrapper">
+              <img
+                className="item-icon"
+                alt="Home"
+                src="assets/img/sidebar-icons/Home Selected.png"
+              />
+              <span className="item-text">Dashboard</span>
+            </div>
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/users">
+            <div className="itemWrapper">
+              <img
+                className="item-icon"
+                alt="Home"
+                src="assets/img/sidebar-icons/Staff.png"
+              />
+              <span className="item-text">Users</span>
+            </div>
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/hospital-more-info">
+            <div className="itemWrapper">
+              <img
+                className="item-icon"
+                alt="Home"
+                src="assets/img/sidebar-icons/Shortcuts.png"
+              />
+              <span className="item-text">More Info</span>
+            </div>
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/support">
+            <div className="itemWrapper">
+              <img
+                className="item-icon"
+                alt="Home"
+                src="assets/img/sidebar-icons/Support.png"
+              />
+              <span className="item-text">Support</span>
             </div>
           </Link>
         </li>

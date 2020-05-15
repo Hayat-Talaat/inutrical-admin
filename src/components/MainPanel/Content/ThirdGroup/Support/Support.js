@@ -1,18 +1,19 @@
 import React, { useState } from "react";
-import { Card, Form, Row, Col } from "react-bootstrap";
+import { Card, Form, Row, Col, Button } from "react-bootstrap";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
 
 const animatedComponents = makeAnimated();
 
-const STMPOptions = [
-  { value: 1, label: "New Registration" },
-  { value: 2, label: "Forget Password" },
-  { value: 3, label: "Logout" },
+const supportOptions = [
+  { value: 1, label: "Support 1" },
+  { value: 2, label: "Support 2" },
+  { value: 3, label: "Support 3" },
+  { value: 4, label: "Support 4" }
 ];
 
-const STMP = () => {
-  const [STMP, setSTMP] = useState({});
+const Support = () => {
+  const [support, setSupport] = useState({});
 
   const customTheme = theme => {
     return {
@@ -25,6 +26,7 @@ const STMP = () => {
     };
   };
 
+  
   return (
     <>
       <Card>
@@ -34,12 +36,26 @@ const STMP = () => {
               <Col md={3} sm={6}>
                 <Form.Group className="mb-4">
                   <Select
-                    options={STMPOptions}
+                    options={supportOptions}
                     theme={customTheme}
                     components={animatedComponents}
-                    onChange={setSTMP}
+                    onChange={setSupport}
                     autoFocus
                     isSearchable
+                    placeholder="Support"
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col md={6} className="pr-1">
+                <Form.Group>
+                  <Form.Label className="label-form">Subject</Form.Label>
+                  <Form.Control
+                    type="text"
+                    className="form-inputs"
+                    placeholder="Enter Your Subject"
                   />
                 </Form.Group>
               </Col>
@@ -53,20 +69,16 @@ const STMP = () => {
                     className="form-inputs"
                     placeholder="Enter Your Message"
                     as="textarea"
-                    value="Dear,
-
-Thank you for registering with us. Your subscription starts in 12/04/2020 and ends in 12/04/2021. 
-
-Your Admin username is: mkaath
-Your password is: 3254dfc43
-
- and you can create up to 20 user.
-
-Best Regards
-iNutrical Company"
                     rows={7}
                   />
                 </Form.Group>
+              </Col>
+            </Row>
+            <Row className="flex-justify">
+              <Col md={3} sm={6}>
+                <Button className="add-btn" variant="primary" type="submit">
+                  Send Message
+                </Button>
               </Col>
             </Row>
           </Form>
@@ -76,4 +88,4 @@ iNutrical Company"
   );
 };
 
-export default STMP;
+export default Support;

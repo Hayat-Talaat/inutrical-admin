@@ -3,8 +3,9 @@
     font-weight: bold;
     color: #6C757D;
 }
+
 .add-btn {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #fff;
     background-color: #A9D41F;
@@ -92,4 +93,41 @@
 .flex-justify {
     display: flex;
     justify-content: flex-end;
+}
+
+/* Form */
+textarea.form-control {
+    max-height: 100% !important;
+}
+.label-form {
+    color: #6C757D !important;
+    font-size: 0.9375rem !important;
+}
+.form-inputs {
+    background-color: #FAFBFE !important;
+    color: #6C757D !important;
+    font-size: 0.875rem !important;
+    border: none !important;
+}
+
+/* Admin Hospital */
+.admin-hos {
+    cursor: pointer;
+    opacity: .85;
+}
+.admin-hos:hover {
+    opacity: 1;
+}
+.admin-hos img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.admin-hos .card-title {
+    color: #061C43 !important;
+    font-size: 1.125rem !important;
+}
+.component-header {
+    color: #6C757D;
+    font-size: 1.125rem;
+    font-weight: bold;
 }

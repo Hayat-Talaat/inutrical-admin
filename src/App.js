@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from 'react-router-dom'
 import Sidebar from "./components/Sidebar";
-import MainPanal from './components/MainPanel'
+import MainPanal from './components/MainPanel';
 // import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
