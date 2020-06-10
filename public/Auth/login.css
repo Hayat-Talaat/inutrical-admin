@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  transition: all .5s ease !important;
+}
+body {
+  background-color: #f1f3fa;
+  height: 100vh;
+  width: 100vw;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-container {
+  padding: 40px;
+}
+
+.login-form.card {
+  border-radius: 60px;
+  border: none;
+  box-shadow: -1px -1px 10px 3px #061c4342;
+}
+.login-form form {
+  border-left: 1px solid #061c4378;
+  padding-left: 1.5rem;
+}
+.login-form form p {
+  color: #061c43;
+  word-spacing: 1.5px;
+  font-size: 1.15em;
+}
+
+/* inputs */
+.login-form form label {
+    color: #8391A2;
+    font-size: 15px;
+}
+.login-form form input {
+    background-color: #FAFBFE;
+    border: .8px solid #FAFBFE;
+    color: #061c43;
+    transition: all .5s ease !important;
+    border-radius: 8px;
+}
+.login-form form input:focus {
+    outline: none;
+    box-shadow: none;
+    border: .8px solid #061c43;
+}
+.login-form form input::-webkit-input-placeholder { /* Edge */
+  color: #8391A2;
+  opacity: .6;
+  font-size: 14px;
+}
+.login-form form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #8391A2;
+  opacity: .6;
+  font-size: 14px;
+}
+.login-form form input::placeholder {
+  color: #8391A2;
+  opacity: .6;
+  font-size: 14px;
+}
+
+.login-form form a {
+    color: #A9D41F;
+    text-decoration: none;
+    opacity: 1;
+}
+.login-form form a:hover {
+    opacity: .9;
+}
+
+/* button form */
+.login-form form button {
+  width: 100%;
+  background: #061c43;
+  border: none;
+  border-radius: 10px;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.login-form form button:hover,
+.login-form form button:focus,
+.login-form form button:active {
+  opacity: 0.9 !important;
+  background: #061c43 !important;
+  border: none !important;
+  outline: none;
+}
+

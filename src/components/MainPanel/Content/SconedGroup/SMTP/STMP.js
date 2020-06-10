@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Card, Form, Row, Col } from "react-bootstrap";
-import Select from "react-select";
-import makeAnimated from "react-select/animated";
+// import Select from "react-select";
+// import makeAnimated from "react-select/animated";
 
-const animatedComponents = makeAnimated();
+// const animatedComponents = makeAnimated();
 
 const STMPOptions = [
   { value: 1, label: "New Registration" },
@@ -31,18 +31,22 @@ const STMP = () => {
         <Card.Body>
           <Form>
             <Row>
-              <Col md={3} sm={6}>
-                <Form.Group className="mb-4">
-                  <Select
-                    options={STMPOptions}
-                    theme={customTheme}
-                    components={animatedComponents}
-                    onChange={setSTMP}
-                    autoFocus
-                    isSearchable
-                  />
-                </Form.Group>
-              </Col>
+              <Form.Group
+                as={Col}
+                md={4}
+                sm={6}
+                className="form-group"
+                controlId="exampleForm.ControlSelect1"
+              >
+                <Form.Control as="select">
+                  <option value="" disabled selected>
+                    Select STMP Message
+                  </option>
+                  <option>New Registration</option>
+                  <option>Forget Password</option>
+                  <option>Login</option>
+                </Form.Control>
+              </Form.Group>
             </Row>
 
             <Row>

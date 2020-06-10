@@ -185,11 +185,13 @@ const UserProfile = () => {
                       <button type="submit" className="btn btn-primary btn-round">Update Profile</button>
                     </div>
                   </div>
-                </form>
+                
+              </form>
               </div>
             </div>
           </div>
-        </div>
+        
+      </div>
           </>
   );
 };

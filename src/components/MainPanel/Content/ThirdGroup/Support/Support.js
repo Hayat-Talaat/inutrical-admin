@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Card, Form, Row, Col, Button } from "react-bootstrap";
-import Select from "react-select";
-import makeAnimated from "react-select/animated";
+// import Select from "react-select";
+// import makeAnimated from "react-select/animated";
 
-const animatedComponents = makeAnimated();
+// const animatedComponents = makeAnimated();
 
 const supportOptions = [
   { value: 1, label: "Support 1" },
@@ -33,19 +33,23 @@ const Support = () => {
         <Card.Body>
           <Form>
             <Row>
-              <Col md={3} sm={6}>
-                <Form.Group className="mb-4">
-                  <Select
-                    options={supportOptions}
-                    theme={customTheme}
-                    components={animatedComponents}
-                    onChange={setSupport}
-                    autoFocus
-                    isSearchable
-                    placeholder="Support"
-                  />
-                </Form.Group>
-              </Col>
+              <Form.Group
+                as={Col}
+                md={4}
+                sm={6}
+                className="form-group"
+                controlId="exampleForm.ControlSelect1"
+              >
+                <Form.Control as="select">
+                  <option value="" disabled selected>
+                    Support
+                  </option>
+                  <option>Support 1</option>
+                  <option>Support 2</option>
+                  <option>Support 3</option>
+                  <option>Support 4</option>
+                </Form.Control>
+              </Form.Group>
             </Row>
 
             <Row>

@@ -2,6 +2,7 @@ import React from "react";
 import TableList from "./Table";
 import { Row, Col, Button } from "react-bootstrap";
 import "../../pages.css";
+import { Link } from "react-router-dom";
 
 const test = () => {
   return (
@@ -12,14 +13,16 @@ const test = () => {
             <span className="component-title">Disease List</span>
           </div>
         </Col>
-        <Col md={{ span: 3, offset: 5 }}>
-          <Button className="add-btn">
-            <img
-              alt="plus"
-              src="assets/img/components/Table/add patient White.png"
-            />
-            Add New Disease
-          </Button>
+        <Col className="justify-end">
+          <Link to="/new-disese">
+            <Button className="add-btn">
+              <img
+                alt="plus"
+                src="assets/img/components/Table/add patient White.png"
+              />
+              Add New Disease
+            </Button>
+          </Link>
         </Col>
       </Row>
 

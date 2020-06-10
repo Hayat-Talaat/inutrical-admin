@@ -4,7 +4,7 @@ import Content from './Content';
 
 const MainPanal = () => {
   return (
-      <div class="main-panel">
+      <div className="main-panel">
       <NavBars />
       <Content/>
     </div>
